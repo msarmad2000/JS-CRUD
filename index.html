@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD OPERATION USING JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+    #edit{
+        background-color: green;
+        color: aquamarine;
+    }
+    #delete{
+        background-color: red;
+        color: aquamarine;
+    }
+legend{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <div class="container" style="background-color: black;" >
+     <fieldset>
+        <legend><h1 class="text-primary">FORM</h1></legend>
+            <form id="form" class="text-primary">
+            <input type="text" placeholder="Name" id="name" name="name"><br>
+            <input type="text" placeholder="Job" id="job" name="job"><br>
+            <input type="text" placeholder="Experience" id="exp" name="exp"> <br>
+            <input type="button" value="Submit" class="btn btn-primary" id="btn-submit" onclick="Submit()">
+            <input type="reset" value="Reset" class="btn btn-danger" onclick="Reset()">
+            </form>
+            
+
+     </fieldset>
+     <br>
+
+     <div id="msg" class="text-primary">
+     </div><br>
+
+     <fieldset>
+        <legend class="text-primary"><h2>Data From Local Data Stores</h2></legend>
+        <table class="table table-dark text-primary" id="table" >
+            <thead class="thead-dark">
+            <tr>
+                <td>Name</td>
+                <td>Job</td>
+                <td>Experience</td> 
+                <td>Action</td>  
+            </tr>
+            </thead>    
+        </table>
+     </fieldset>
+
+    </div>
+
+</body>
+</html>
